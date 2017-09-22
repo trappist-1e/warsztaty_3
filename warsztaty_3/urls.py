@@ -15,7 +15,15 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
+from Messenger.views import *
+
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-]
+    url(r'^new/', new_person),
+    url(r'^modify/(?P<id>(<\d+))', modify),
+    url(r'^delete/(?P<id>(<\d+))', delete),
+    url(r'^show/(?P<id>(<\d+))', show),
+    url(r'^$', show_all)
+
+
