@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <form action="#" , method="post">
+        <label>Imię: <br>
+            <input type="text" name="first_name"><br>
+        </label>
+        <label>Nazwisko: <br>
+            <input type="text" name="last_name"><br>
+        </label>
+        <label>Opis: <br>
+            <input type="text" name="description"> <br>
+        </label>
+        <input type="submit" value="Submit">
+    </form>
+    {% if request.GET.new_person_added == 'True' %}
+        <p>Dodano osobę do ksiażki</p>
+    {% endif %}
+{% endblock %}

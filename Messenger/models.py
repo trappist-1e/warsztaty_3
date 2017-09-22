@@ -5,7 +5,7 @@ class Person(models.Model):
     first_name = models.CharField(max_length=128)
     last_name = models.CharField(max_length=128)
     description = models.CharField(max_length=128)
-    address = models.ForeignKey('Address')
+    address = models.ForeignKey('Address', null=True)
 
 
 class Address(models.Model):

@@ -19,8 +19,8 @@ from Messenger.views import *
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^$', show_all)
-    # url(r'^new/', new_person),
+    url(r'^$', show_all),
+    url(r'^new/', new_person),
     # url(r'^modify/(?P<id>(<\d+))', modify),
     # url(r'^delete/(?P<id>(<\d+))', delete),
     # url(r'^show/(?P<id>(<\d+))', show),
