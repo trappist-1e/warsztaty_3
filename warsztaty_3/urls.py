@@ -25,5 +25,5 @@ urlpatterns = [
     url(r'^delete/(?P<id>(<\d+))', delete),
     url(r'^show/(?P<id>(<\d+))', show),
     url(r'^$', show_all)
-
+]
 
